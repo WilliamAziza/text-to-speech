@@ -1,10 +1,22 @@
-import styles from './styles.css'
+import React, { useState } from 'react';
 import './App.css';
-import TextToSpeech from './components/TextToSpeech';
+import './styles.css';
+import ProductList from './components/ProductList';
+import Cart from './components/Cart';
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
+
+  const handleAddToCart = (product) => {
+    setCartItems([...cartItems, product]);
+  };
+
   return (
-    <TextToSpeech/>
+    <div className="app-container">
+      <h1>Groceries and Cosmetics Shop</h1>
+      <ProductList onAddToCart={handleAddToCart} />
+      <Cart cartItems={cartItems} />
+    </div>
   );
 }
 
