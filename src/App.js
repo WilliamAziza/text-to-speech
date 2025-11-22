@@ -1,4 +1,4 @@
-naimport React, { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import './styles.css';
 import Navbar from './components/Navbar';
