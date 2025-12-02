@@ -25,7 +25,7 @@ const products = [
     name: 'Lipstick',
     price: 15.00,
     category: 'cosmetics',
-    image: 'https://via.placeholder.com/150?text=Lipstick'
+    image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=150&h=150&fit=crop&crop=center'
   },
   {
     id: 5,
