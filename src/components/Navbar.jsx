@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar({ searchTerm, onSearchChange, cartCount }) {
   return (
@@ -15,7 +16,9 @@ function Navbar({ searchTerm, onSearchChange, cartCount }) {
         />
       </div>
       <div className="cart-icon">
-        <span>🛒 ({cartCount})</span>
+        <Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <span>🛒 ({cartCount})</span>
+        </Link>
       </div>
     </nav>
   );

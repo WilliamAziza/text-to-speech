@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
+import CartPage from './components/CartPage';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -33,25 +35,33 @@ function App() {
   const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <div className="App">
-      <Navbar
-        searchTerm={searchTerm}
-        onSearchChange={setSearchTerm}
-        cartCount={cartCount}
-      />
-      <div className="main-content">
-        <ProductList
-          onAddToCart={handleAddToCart}
+    <Router>
+      <div className="App">
+        <Navbar
           searchTerm={searchTerm}
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
+          onSearchChange={setSearchTerm}
+          cartCount={cartCount}
         />
-        <Cart
-          cartItems={cartItems}
-          onRemoveFromCart={handleRemoveFromCart}
-        />
+        <Routes>
+          <Route path="/" element={
+            <div className="main-content">
+              <ProductList
+                onAddToCart={handleAddToCart}
+                searchTerm={searchTerm}
+                selectedCategory={selectedCategory}
+                onCategoryChange={setSelectedCategory}
+              />
+            </div>
+          } />
+          <Route path="/cart" element={
+            <CartPage
+              cartItems={cartItems}
+              onRemoveFromCart={handleRemoveFromCart}
+            />
+          } />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 
