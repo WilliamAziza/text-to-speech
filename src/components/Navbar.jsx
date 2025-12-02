@@ -5,7 +5,11 @@ function Navbar({ searchTerm, onSearchChange, cartCount }) {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <h1>Eva</h1>
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <div className="logo">
+            <span>Groceries and Giggles by Gloria</span>
+          </div>
+        </Link>
       </div>
       <div className="search-bar">
         <input
@@ -14,6 +18,7 @@ function Navbar({ searchTerm, onSearchChange, cartCount }) {
           value={searchTerm}
           onChange={(e) => onSearchChange(e.target.value)}
         />
+        <button type="button" className="search-button">Search</button>
       </div>
       <div className="cart-icon">
         <Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>

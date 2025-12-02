@@ -3,6 +3,66 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  padding-top: 80px;
+}
+
+.hero-banner {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.cta-button {
+  background: white;
+  color: #ff69b4;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ffe6f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -12,18 +72,58 @@
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1000;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.navbar-brand h1 {
-  margin: 0;
-  color: #ff69b4;
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo span {
+  font-size: 1.2rem;
+}
+
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
 }
 
 .search-bar input {
   padding: 8px;
-  width: 300px;
+  width: 250px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background: #ff69b4;
+  color: white;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background: #ff1493;
 }
 
 .cart-icon {
@@ -218,6 +318,32 @@
 .social-links {
   display: flex;
   gap: 10px;
+}
+
+.newsletter {
+  margin-top: 15px;
+}
+
+.newsletter input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.newsletter button {
+  background: white;
+  color: #ff69b4;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter button:hover {
+  background: #ffe6f0;
 }
 
 .footer-bottom {

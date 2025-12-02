@@ -6,6 +6,7 @@ import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import CartPage from './components/CartPage';
 import Footer from './components/Footer';
+import HeroBanner from './components/HeroBanner';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -57,17 +58,20 @@ function App() {
         />
         <Routes>
           <Route path="/" element={
-            <div className="main-content">
-              <ProductList
-                onAddToCart={handleAddToCart}
-                searchTerm={searchTerm}
-                selectedCategory={selectedCategory}
-                onCategoryChange={setSelectedCategory}
-                cartItems={cartItems}
-                onIncrease={handleIncrease}
-                onDecrease={handleDecrease}
-              />
-            </div>
+            <>
+              <HeroBanner />
+              <div className="main-content">
+                <ProductList
+                  onAddToCart={handleAddToCart}
+                  searchTerm={searchTerm}
+                  selectedCategory={selectedCategory}
+                  onCategoryChange={setSelectedCategory}
+                  cartItems={cartItems}
+                  onIncrease={handleIncrease}
+                  onDecrease={handleDecrease}
+                />
+              </div>
+            </>
           } />
           <Route path="/cart" element={
             <CartPage

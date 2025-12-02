@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Eva</h3>
+          <h3>Groceries and Giggles by Gloria</h3>
           <p>Your one-stop shop for groceries and cosmetics. Quality products at great prices.</p>
         </div>
         <div className="footer-section">
@@ -32,7 +32,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2023 Eva. All rights reserved.</p>
+        <p>&copy; 2023 Groceries and Giggles by Gloria. All rights reserved.</p>
       </div>
     </footer>
   );
