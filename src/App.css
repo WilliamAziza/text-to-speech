@@ -16,7 +16,7 @@
 
 .navbar-brand h1 {
   margin: 0;
-  color: #f68b1e;
+  color: #ff69b4;
 }
 
 .search-bar input {
@@ -54,7 +54,7 @@
 }
 
 .category-buttons button.active {
-  background: #f68b1e;
+  background: #ff69b4;
   color: white;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .product-item button {
-  background: #f68b1e;
+  background: #ff69b4;
   color: white;
   border: none;
   padding: 8px 16px;
