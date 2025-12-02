@@ -1,22 +1,22 @@
 import React from 'react';
 
-function Navbar({ currentSection, setCurrentSection }) {
+function Navbar({ searchTerm, onSearchChange, cartCount }) {
   return (
     <nav className="navbar">
-      <ul>
-        <li
-          className={currentSection === 'home' ? 'active' : ''}
-          onClick={() => setCurrentSection('home')}
-        >
-          Home
-        </li>
-        <li
-          className={currentSection === 'cart' ? 'active' : ''}
-          onClick={() => setCurrentSection('cart')}
-        >
-          Cart
-        </li>
-      </ul>
+      <div className="navbar-brand">
+        <h1>Jumia Clone</h1>
+      </div>
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search products..."
+          value={searchTerm}
+          onChange={(e) => onSearchChange(e.target.value)}
+        />
+      </div>
+      <div className="cart-icon">
+        <span>Cart ({cartCount})</span>
+      </div>
     </nav>
   );
 }
