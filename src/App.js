@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import CartPage from './components/CartPage';
+import Footer from './components/Footer';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -20,6 +21,18 @@ function App() {
     } else {
       setCartItems([...cartItems, { ...product, quantity: 1 }]);
     }
+  };
+
+  const handleIncrease = (product) => {
+    setCartItems(cartItems.map(item =>
+      item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+    ));
+  };
+
+  const handleDecrease = (product) => {
+    setCartItems(cartItems.map(item =>
+      item.id === product.id ? { ...item, quantity: item.quantity - 1 } : item
+    ).filter(item => item.quantity > 0));
   };
 
   const handleRemoveFromCart = (index) => {
@@ -50,6 +63,9 @@ function App() {
                 searchTerm={searchTerm}
                 selectedCategory={selectedCategory}
                 onCategoryChange={setSelectedCategory}
+                cartItems={cartItems}
+                onIncrease={handleIncrease}
+                onDecrease={handleDecrease}
               />
             </div>
           } />
@@ -60,6 +76,7 @@ function App() {
             />
           } />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

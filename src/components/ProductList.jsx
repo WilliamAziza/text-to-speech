@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import products from '../data/products';
 import ProductItem from './ProductItem';
 
-function ProductList({ onAddToCart, searchTerm, selectedCategory, onCategoryChange }) {
+function ProductList({ onAddToCart, searchTerm, selectedCategory, onCategoryChange, cartItems, onIncrease, onDecrease }) {
   const filteredProducts = products.filter(product => {
     const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
