@@ -15,7 +15,7 @@ function Navbar({ searchTerm, onSearchChange, cartCount }) {
         />
       </div>
       <div className="cart-icon">
-        <span>Cart ({cartCount})</span>
+        <span>🛒 ({cartCount})</span>
       </div>
     </nav>
   );
