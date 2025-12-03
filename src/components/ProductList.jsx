@@ -61,7 +61,7 @@ function ProductList({ onAddToCart, searchTerm, selectedCategory, onCategoryChan
       </div>
       <div className="product-list">
         {sortedProducts.map(product => (
-          <ProductItem key={product.id} product={product} onAddToCart={onAddToCart} />
+          <ProductItem key={product.id} product={product} />
         ))}
       </div>
     </div>

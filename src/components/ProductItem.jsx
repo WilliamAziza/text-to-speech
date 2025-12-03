@@ -1,14 +1,7 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function ProductItem({ product, onAddToCart }) {
-  const navigate = useNavigate();
-
-  const handleAddToCart = () => {
-    onAddToCart(product);
-    navigate(`/product/${product.id}`);
-  };
-
+function ProductItem({ product }) {
   return (
     <div className="product-item">
       <Link to={`/product/${product.id}`}>
@@ -16,7 +9,6 @@ function ProductItem({ product, onAddToCart }) {
         <h3>{product.name}</h3>
         <p>${product.price.toFixed(2)}</p>
       </Link>
-      <button onClick={handleAddToCart}>Add to Cart</button>
     </div>
   );
 }
