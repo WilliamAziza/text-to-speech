@@ -32,7 +32,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2023 Groceries and Giggles by Gloria. All rights reserved.</p>
+        <p>&copy; 2025 Groceries and Giggles by Gloria. All rights reserved.</p>
       </div>
     </footer>
   );
