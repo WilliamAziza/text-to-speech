@@ -7,6 +7,7 @@ import Cart from './components/Cart';
 import CartPage from './components/CartPage';
 import Footer from './components/Footer';
 import HeroBanner from './components/HeroBanner';
+import ProductDetails from './components/ProductDetails';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -78,6 +79,9 @@ function App() {
               cartItems={cartItems}
               onRemoveFromCart={handleRemoveFromCart}
             />
+          } />
+          <Route path="/product/:id" element={
+            <ProductDetails onAddToCart={handleAddToCart} />
           } />
         </Routes>
         <Footer />

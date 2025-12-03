@@ -3,36 +3,64 @@ import products from '../data/products';
 import ProductItem from './ProductItem';
 
 function ProductList({ onAddToCart, searchTerm, selectedCategory, onCategoryChange, cartItems, onIncrease, onDecrease }) {
+  const [sortOption, setSortOption] = useState('name-asc');
+
   const filteredProducts = products.filter(product => {
     const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
+  const sortedProducts = [...filteredProducts].sort((a, b) => {
+    switch (sortOption) {
+      case 'name-asc':
+        return a.name.localeCompare(b.name);
+      case 'name-desc':
+        return b.name.localeCompare(a.name);
+      case 'price-low':
+        return a.price - b.price;
+      case 'price-high':
+        return b.price - a.price;
+      default:
+        return 0;
+    }
+  });
+
   return (
     <div className="product-list-container">
-      <div className="category-buttons">
-        <button
-          className={selectedCategory === 'all' ? 'active' : ''}
-          onClick={() => onCategoryChange('all')}
-        >
-          All
-        </button>
-        <button
-          className={selectedCategory === 'groceries' ? 'active' : ''}
-          onClick={() => onCategoryChange('groceries')}
-        >
-          Groceries
-        </button>
-        <button
-          className={selectedCategory === 'cosmetics' ? 'active' : ''}
-          onClick={() => onCategoryChange('cosmetics')}
-        >
-          Cosmetics
-        </button>
+      <div className="filters">
+        <div className="category-buttons">
+          <button
+            className={selectedCategory === 'all' ? 'active' : ''}
+            onClick={() => onCategoryChange('all')}
+          >
+            All
+          </button>
+          <button
+            className={selectedCategory === 'groceries' ? 'active' : ''}
+            onClick={() => onCategoryChange('groceries')}
+          >
+            Groceries
+          </button>
+          <button
+            className={selectedCategory === 'cosmetics' ? 'active' : ''}
+            onClick={() => onCategoryChange('cosmetics')}
+          >
+            Cosmetics
+          </button>
+        </div>
+        <div className="sort-dropdown">
+          <label htmlFor="sort">Sort by:</label>
+          <select id="sort" value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
+            <option value="name-asc">Name A-Z</option>
+            <option value="name-desc">Name Z-A</option>
+            <option value="price-low">Price Low to High</option>
+            <option value="price-high">Price High to Low</option>
+          </select>
+        </div>
       </div>
       <div className="product-list">
-        {filteredProducts.map(product => (
+        {sortedProducts.map(product => (
           <ProductItem key={product.id} product={product} onAddToCart={onAddToCart} />
         ))}
       </div>

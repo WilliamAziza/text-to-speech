@@ -139,10 +139,32 @@
   flex: 2;
 }
 
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .category-buttons {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+}
+
+.sort-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-dropdown label {
+  font-weight: bold;
+}
+
+.sort-dropdown select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .category-buttons button {
@@ -181,6 +203,11 @@
 .product-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+}
+
+.product-item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .product-item img {
@@ -346,6 +373,43 @@
   background: #ffe6f0;
 }
 
+.product-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-details img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.product-details h1 {
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin-bottom: 20px;
+}
+
+.product-details button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product-details button:hover {
+  background: #ff1493;
+}
+
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
@@ -354,15 +418,69 @@
 }
 
 @media (max-width: 768px) {
+  .App {
+    padding: 10px;
+    padding-top: 80px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-bar input {
+    width: 70%;
+    max-width: 300px;
+  }
+
   .main-content {
     flex-direction: column;
   }
 
-  .search-bar input {
-    width: 200px;
+  .filters {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .category-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .category-buttons button {
+    flex: 1;
+    min-width: 100px;
+  }
+
+  .sort-dropdown {
+    justify-content: center;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .product-details {
+    padding: 10px;
+  }
+
+  .product-details img {
+    max-width: 100%;
   }
 
   .footer-content {
     flex-direction: column;
+  }
+
+  .newsletter input {
+    width: 150px;
   }
 }

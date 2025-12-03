@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar({ searchTerm, onSearchChange, cartCount }) {
+  const [searchInput, setSearchInput] = useState(searchTerm);
+
+  const handleSearch = () => {
+    onSearchChange(searchInput);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">
@@ -15,10 +21,10 @@ function Navbar({ searchTerm, onSearchChange, cartCount }) {
         <input
           type="text"
           placeholder="Search products..."
-          value={searchTerm}
-          onChange={(e) => onSearchChange(e.target.value)}
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
         />
-        <button type="button" className="search-button">Search</button>
+        <button type="button" className="search-button" onClick={handleSearch}>Search</button>
       </div>
       <div className="cart-icon">
         <Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>
