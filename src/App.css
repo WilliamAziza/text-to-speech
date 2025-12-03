@@ -379,6 +379,12 @@
   margin-bottom: 10px;
 }
 
+.product-details .rating {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ff69b4;
+}
+
 .product-details p {
   margin-bottom: 20px;
 }
