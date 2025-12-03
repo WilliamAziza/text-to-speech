@@ -417,16 +417,111 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .App {
+    padding: 15px;
+    padding-top: 80px;
+  }
+
+  .hero-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .search-bar input {
+    width: 200px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .category-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .category-buttons button {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .sort-dropdown {
+    justify-content: center;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 18px;
+  }
+
+  .product-details {
+    padding: 15px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter input {
+    width: 180px;
+  }
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
   .App {
     padding: 10px;
     padding-top: 80px;
   }
 
+  .hero-banner {
+    padding: 30px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
   .navbar {
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+  }
+
+  .logo span {
+    font-size: 1rem;
   }
 
   .search-bar {
@@ -457,15 +552,38 @@
   .category-buttons button {
     flex: 1;
     min-width: 100px;
+    padding: 8px 12px;
   }
 
   .sort-dropdown {
     justify-content: center;
   }
 
+  .sort-dropdown label {
+    font-size: 0.9rem;
+  }
+
   .product-list {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .product-item {
+    padding: 10px;
+  }
+
+  .product-item img {
+    height: 120px;
+  }
+
+  .product-item h3 {
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+
+  .product-item button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
   }
 
   .product-details {
@@ -476,11 +594,137 @@
     max-width: 100%;
   }
 
+  .product-details h1 {
+    font-size: 1.5rem;
+  }
+
+  .product-details p {
+    font-size: 0.9rem;
+  }
+
+  .product-details button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    padding: 30px 15px;
+  }
+
   .footer-content {
     flex-direction: column;
   }
 
   .newsletter input {
     width: 150px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .App {
+    padding: 5px;
+    padding-top: 80px;
+  }
+
+  .hero-banner {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    padding: 5px;
+    gap: 8px;
+  }
+
+  .logo span {
+    font-size: 0.9rem;
+  }
+
+  .search-bar input {
+    width: 80%;
+    max-width: 250px;
+    padding: 6px;
+  }
+
+  .search-button {
+    padding: 6px 12px;
+  }
+
+  .filters {
+    margin-bottom: 15px;
+  }
+
+  .category-buttons button {
+    min-width: 80px;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+
+  .sort-dropdown select {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .product-item {
+    padding: 8px;
+  }
+
+  .product-item img {
+    height: 100px;
+  }
+
+  .product-item h3 {
+    font-size: 0.8rem;
+    margin: 6px 0;
+  }
+
+  .product-item button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  .product-details {
+    padding: 8px;
+  }
+
+  .product-details h1 {
+    font-size: 1.2rem;
+  }
+
+  .product-details p {
+    font-size: 0.8rem;
+  }
+
+  .product-details button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .newsletter input {
+    width: 120px;
+    padding: 6px;
+  }
+
+  .newsletter button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
   }
 }
