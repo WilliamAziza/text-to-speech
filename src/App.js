@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import CartPage from './components/CartPage';
+import Checkout from './components/Checkout';
 import Footer from './components/Footer';
 import HeroBanner from './components/HeroBanner';
 import ProductDetails from './components/ProductDetails';
@@ -47,6 +48,10 @@ function App() {
     setCartItems(newCartItems);
   };
 
+  const handleClearCart = () => {
+    setCartItems([]);
+  };
+
   const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (
@@ -78,6 +83,12 @@ function App() {
             <CartPage
               cartItems={cartItems}
               onRemoveFromCart={handleRemoveFromCart}
+            />
+          } />
+          <Route path="/checkout" element={
+            <Checkout
+              cartItems={cartItems}
+              onClearCart={handleClearCart}
             />
           } />
           <Route path="/product/:id" element={
