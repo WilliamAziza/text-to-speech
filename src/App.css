@@ -410,6 +410,94 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.about-us {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-us h1 {
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.auth-form {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-form h1 {
+  color: #ff69b4;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.auth-button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auth-button:hover {
+  background: #ff1493;
+}
+
+.auth-form p {
+  margin-top: 20px;
+}
+
+.auth-form a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+
 /* Tablet Styles */
 @media (max-width: 1024px) {
   .App {

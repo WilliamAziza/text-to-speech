@@ -10,10 +10,7 @@ function Navbar() {
     setSearchTerm(searchInput);
   };
 
-  const handleClear = () => {
-    setSearchInput('');
-    setSearchTerm('');
-  };
+
 
   const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
@@ -34,9 +31,17 @@ function Navbar() {
           onChange={(e) => setSearchInput(e.target.value)}
         />
         <button type="button" className="search-button" onClick={handleSearch}>Search</button>
-        <button type="button" className="clear-button" onClick={handleClear}>Clear</button>
       </div>
-      <div className="cart-icon">
+      <div className="nav-links">
+        <Link to="/about" style={{ textDecoration: 'none', color: 'inherit', marginRight: '20px' }}>
+          About Us
+        </Link>
+        <Link to="/login" style={{ textDecoration: 'none', color: 'inherit', marginRight: '20px' }}>
+          Login
+        </Link>
+        <Link to="/signup" style={{ textDecoration: 'none', color: 'inherit', marginRight: '20px' }}>
+          Signup
+        </Link>
         <Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>
           <span>🛒 ({cartCount})</span>
         </Link>
