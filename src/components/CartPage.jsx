@@ -13,7 +13,7 @@ function CartPage() {
       </Link>
       <Cart
         cartItems={cartItems}
-        onRemoveFromCart={removeFromCart}
+        onRemoveFromCart={handleRemoveFromCart}
       />
       {cartItems.length > 0 && (
         <div className="checkout-section">
