@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import products from '../data/products';
 import ProductItem from './ProductItem';
+import { useAppContext } from '../context/AppContext';
 
-function ProductList({ onAddToCart, searchTerm, selectedCategory, onCategoryChange, cartItems, onIncrease, onDecrease }) {
+function ProductList() {
+  const { searchTerm, selectedCategory, setSelectedCategory, handleAddToCart } = useAppContext();
   const [sortOption, setSortOption] = useState('name-asc');
 
   const filteredProducts = products.filter(product => {
@@ -32,19 +34,19 @@ function ProductList({ onAddToCart, searchTerm, selectedCategory, onCategoryChan
         <div className="category-buttons">
           <button
             className={selectedCategory === 'all' ? 'active' : ''}
-            onClick={() => onCategoryChange('all')}
+            onClick={() => setSelectedCategory('all')}
           >
             All
           </button>
           <button
             className={selectedCategory === 'groceries' ? 'active' : ''}
-            onClick={() => onCategoryChange('groceries')}
+            onClick={() => setSelectedCategory('groceries')}
           >
             Groceries
           </button>
           <button
             className={selectedCategory === 'cosmetics' ? 'active' : ''}
-            onClick={() => onCategoryChange('cosmetics')}
+            onClick={() => setSelectedCategory('cosmetics')}
           >
             Cosmetics
           </button>
@@ -61,7 +63,7 @@ function ProductList({ onAddToCart, searchTerm, selectedCategory, onCategoryChan
       </div>
       <div className="product-list">
         {sortedProducts.map(product => (
-          <ProductItem key={product.id} product={product} />
+          <ProductItem key={product.id} product={product} onAddToCart={handleAddToCart} />
         ))}
       </div>
     </div>

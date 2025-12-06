@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAppContext } from '../context/AppContext';
 
-function Navbar({ searchTerm, onSearchChange, cartCount }) {
+function Navbar() {
+  const { searchTerm, setSearchTerm, cartItems } = useAppContext();
   const [searchInput, setSearchInput] = useState(searchTerm);
 
   const handleSearch = () => {
-    onSearchChange(searchInput);
+    setSearchTerm(searchInput);
   };
+
+  const handleClear = () => {
+    setSearchInput('');
+    setSearchTerm('');
+  };
+
+  const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <nav className="navbar">
@@ -25,6 +34,7 @@ function Navbar({ searchTerm, onSearchChange, cartCount }) {
           onChange={(e) => setSearchInput(e.target.value)}
         />
         <button type="button" className="search-button" onClick={handleSearch}>Search</button>
+        <button type="button" className="clear-button" onClick={handleClear}>Clear</button>
       </div>
       <div className="cart-icon">
         <Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>

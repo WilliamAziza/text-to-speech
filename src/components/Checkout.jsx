@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAppContext } from '../context/AppContext';
 
-function Checkout({ cartItems, onClearCart }) {
+function Checkout() {
+  const { cartItems, handleClearCart } = useAppContext();
   const [paymentInfo, setPaymentInfo] = useState({
     cardNumber: '',
     expiryDate: '',
@@ -29,7 +31,7 @@ function Checkout({ cartItems, onClearCart }) {
     setTimeout(() => {
       setIsProcessing(false);
       setIsConfirmed(true);
-      onClearCart(); // Clear cart after successful payment
+      handleClearCart(); // Clear cart after successful payment
     }, 2000);
   };
 
