@@ -4,7 +4,7 @@ const products = [
     name: 'Giggle Banana',
     price: 0.80,
     category: 'groceries',
-    image: '/images/aptamil.jpeg',
+    image: '/images/logo.png',
     description: 'A perfectly ripe banana that brings joy to your breakfast. Packed with potassium and natural sweetness.',
     rating: 4.5
   },
@@ -58,7 +58,7 @@ const products = [
     name: 'Cheerful Milk',
     price: 1.80,
     category: 'groceries',
-    image: '/images/aptamil.jpeg',
+    image: '/images/logo.png',
     description: 'Creamy whole milk sourced from happy cows, rich in calcium and vitamins.',
     rating: 4.0
   },
@@ -112,7 +112,7 @@ const products = [
     name: 'Jolly Cheese',
     price: 4.00,
     category: 'groceries',
-    image: '/images/aptamil.jpeg',
+    image: '/images/logo.png',
     description: 'Aged cheddar cheese with a sharp, nutty flavor, great for sandwiches or cheese boards.',
     rating: 4.4
   },
@@ -166,7 +166,7 @@ const products = [
     name: 'Giggly Lip Gloss',
     price: 12.00,
     category: 'cosmetics',
-    image: '/images/aptamil.jpeg',
+    image: '/images/logo.png',
     description: 'Shiny lip gloss that moisturizes and adds a playful sheen to your lips.',
     rating: 4.4
   },
@@ -211,7 +211,7 @@ const products = [
     name: 'Playful Pasta',
     price: 1.90,
     category: 'groceries',
-    image: '/images/aptamil.jpeg',
+    image: '/images/logo.png',
     description: 'Al dente pasta noodles, versatile for any sauce or recipe.',
     rating: 4.3
   },
