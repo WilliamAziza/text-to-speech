@@ -62,7 +62,7 @@ function ProductList() {
         </div>
       </div>
       <div className="product-list">
-        {sortedProducts.map(product => (
+        {sortedProducts.slice(0, 6).map(product => (
           <ProductItem key={product.id} product={product} onAddToCart={handleAddToCart} />
         ))}
       </div>

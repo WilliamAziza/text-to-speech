@@ -1,10 +1,10 @@
-const products = [
+aconst products = [
   {
     id: 2,
     name: 'Giggle Banana',
     price: 0.80,
     category: 'groceries',
-    image: '/images/logo.png',
+    image: '/images/glow body.jpeg',
     description: 'A perfectly ripe banana that brings joy to your breakfast. Packed with potassium and natural sweetness.',
     rating: 4.5
   },
@@ -13,7 +13,7 @@ const products = [
     name: 'Happy Orange',
     price: 1.20,
     category: 'groceries',
-    image: '/images/body butter.jpeg',
+    image: '/images/lipstick.jpg',
     description: 'Juicy and sweet orange that brings sunshine to your day. Rich in vitamin C and bursting with flavor.',
     rating: 4.2
   },
@@ -22,7 +22,7 @@ const products = [
     name: 'Giggly Lipstick',
     price: 15.00,
     category: 'cosmetics',
-    image: '/images/glow body.jpeg',
+    image: '/images/logo.png',
     description: 'Long-lasting lipstick that adds a playful pop of color to your smile. Creamy formula with a matte finish.',
     rating: 4.7
   },
@@ -31,7 +31,7 @@ const products = [
     name: 'Fun Foundation',
     price: 25.00,
     category: 'cosmetics',
-    image: '/images/lipstick.jpg',
+    image: '/images/scottish oats.jpeg',
     description: 'Build a flawless base with this lightweight foundation that blends seamlessly for all-day wear.',
     rating: 4.3
   },
@@ -40,7 +40,7 @@ const products = [
     name: 'Silly Mascara',
     price: 10.00,
     category: 'cosmetics',
-    image: '/images/logo.png',
+    image: '/images/glow body.jpeg',
     description: 'Volumizing mascara that adds length and definition to your lashes for a dramatic look.',
     rating: 4.1
   },
@@ -49,7 +49,7 @@ const products = [
     name: 'Joy Bread',
     price: 2.00,
     category: 'groceries',
-    image: '/images/scottish oats.jpeg',
+    image: '/images/lipstick.jpg',
     description: 'Freshly baked bread with a soft texture and golden crust, perfect for sandwiches or toast.',
     rating: 4.4
   },
@@ -67,7 +67,7 @@ const products = [
     name: 'Playful Shampoo',
     price: 8.00,
     category: 'cosmetics',
-    image: '/images/body butter.jpeg',
+    image: '/images/scottish oats.jpeg',
     description: 'Gentle shampoo that cleanses and nourishes your hair, leaving it soft and manageable.',
     rating: 4.6
   },
@@ -112,7 +112,7 @@ const products = [
     name: 'Jolly Cheese',
     price: 4.00,
     category: 'groceries',
-    image: '/images/logo.png',
+    image: '/images/glow body.jpeg',
     description: 'Aged cheddar cheese with a sharp, nutty flavor, great for sandwiches or cheese boards.',
     rating: 4.4
   },
@@ -121,7 +121,7 @@ const products = [
     name: 'Playful Eggs',
     price: 2.20,
     category: 'groceries',
-    image: '/images/body butter.jpeg',
+    image: '/images/lipstick.jpg',
     description: 'Farm-fresh eggs with rich yolks, ideal for cooking or baking.',
     rating: 4.1
   },
@@ -130,7 +130,7 @@ const products = [
     name: 'Silly Blush',
     price: 12.00,
     category: 'cosmetics',
-    image: '/images/glow body.jpeg',
+    image: '/images/logo.png',
     description: 'Powdery blush that adds a natural flush to your cheeks for a rosy glow.',
     rating: 4.0
   },
@@ -139,7 +139,7 @@ const products = [
     name: 'Fun Eyeshadow',
     price: 18.00,
     category: 'cosmetics',
-    image: '/images/lipstick.jpg',
+    image: '/images/scottish oats.jpeg',
     description: 'Vibrant eyeshadow palette with blendable shades for creative eye looks.',
     rating: 4.5
   },
@@ -148,7 +148,7 @@ const products = [
     name: 'Merry Nail Polish',
     price: 6.00,
     category: 'cosmetics',
-    image: '/images/logo.png',
+    image: '/images/glow body.jpeg',
     description: 'Quick-drying nail polish in cheerful colors for a polished manicure.',
     rating: 4.3
   },
@@ -157,7 +157,7 @@ const products = [
     name: 'Cheerful Perfume',
     price: 30.00,
     category: 'cosmetics',
-    image: '/images/aptamil.jpeg',
+    image: '/images/lipstick.jpg',
     description: 'Floral fragrance with notes of jasmine and rose, perfect for everyday elegance.',
     rating: 4.7
   },
@@ -175,7 +175,7 @@ const products = [
     name: 'Silly Eyelashes',
     price: 8.00,
     category: 'cosmetics',
-    image: '/images/body butter.jpeg',
+    image: '/images/scottish oats.jpeg',
     description: 'False eyelashes that add volume and drama to your eyes for special occasions.',
     rating: 4.2
   },
@@ -193,7 +193,7 @@ const products = [
     name: 'Cheerful Cereal',
     price: 3.50,
     category: 'groceries',
-    image: '/images/logo.png',
+    image: '/images/lipstick.jpg',
     description: 'Crunchy cereal flakes with a hint of sweetness, great for a quick breakfast.',
     rating: 4.0
   },
@@ -202,7 +202,7 @@ const products = [
     name: 'Jolly Juice',
     price: 2.80,
     category: 'groceries',
-    image: '/images/scottish oats.jpeg',
+    image: '/images/logo.png',
     description: 'Refreshing fruit juice blend packed with vitamins for a healthy boost.',
     rating: 4.1
   },
@@ -211,7 +211,7 @@ const products = [
     name: 'Playful Pasta',
     price: 1.90,
     category: 'groceries',
-    image: '/images/logo.png',
+    image: '/images/scottish oats.jpeg',
     description: 'Al dente pasta noodles, versatile for any sauce or recipe.',
     rating: 4.3
   },
@@ -220,7 +220,7 @@ const products = [
     name: 'Giggle Toilet Roll',
     price: 2.50,
     category: 'groceries',
-    image: '/images/body butter.jpeg',
+    image: '/images/glow body.jpeg',
     description: 'Soft and absorbent toilet paper for everyday comfort and hygiene.',
     rating: 3.9
   },
@@ -229,7 +229,7 @@ const products = [
     name: 'Happy Washing Powder',
     price: 4.00,
     category: 'groceries',
-    image: '/images/glow body.jpeg',
+    image: '/images/lipstick.jpg',
     description: 'Effective laundry detergent that cleans clothes thoroughly while being gentle on fabrics.',
     rating: 4.2
   }

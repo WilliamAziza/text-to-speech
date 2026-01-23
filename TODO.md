@@ -1,1 +1,2 @@
-- [x] Replace Unsplash image URLs in products.js with local paths from images folder, cycling through the 6 images for all 27 products
+- [ ] Limit the number of products displayed in ProductList.jsx to 6 items by slicing the sortedProducts array
+- [ ] Test the change by running the app to ensure only 6 products are shown
