@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { AppProvider } from './context/AppContext';
 import Navbar from './components/Navbar';
-import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import CartPage from './components/CartPage';
 import Checkout from './components/Checkout';
