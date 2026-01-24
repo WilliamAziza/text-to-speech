@@ -1,7 +1,7 @@
-aconst products = [
+const products = [
   {
     id: 2,
-    name: 'Giggle Banana',
+    name: 'Glow Body',
     price: 0.80,
     category: 'groceries',
     image: '/images/glow body.jpeg',
@@ -10,7 +10,7 @@ aconst products = [
   },
   {
     id: 3,
-    name: 'Happy Orange',
+    name: 'Lipstick',
     price: 1.20,
     category: 'groceries',
     image: '/images/lipstick.jpg',
@@ -19,7 +19,7 @@ aconst products = [
   },
   {
     id: 4,
-    name: 'Giggly Lipstick',
+    name: 'Logo',
     price: 15.00,
     category: 'cosmetics',
     image: '/images/logo.png',
@@ -28,7 +28,7 @@ aconst products = [
   },
   {
     id: 5,
-    name: 'Fun Foundation',
+    name: 'Scottish Oats',
     price: 25.00,
     category: 'cosmetics',
     image: '/images/scottish oats.jpeg',
@@ -37,7 +37,7 @@ aconst products = [
   },
   {
     id: 6,
-    name: 'Silly Mascara',
+    name: 'Glow Body',
     price: 10.00,
     category: 'cosmetics',
     image: '/images/glow body.jpeg',
@@ -46,7 +46,7 @@ aconst products = [
   },
   {
     id: 7,
-    name: 'Joy Bread',
+    name: 'Lipstick',
     price: 2.00,
     category: 'groceries',
     image: '/images/lipstick.jpg',
@@ -55,7 +55,7 @@ aconst products = [
   },
   {
     id: 8,
-    name: 'Cheerful Milk',
+    name: 'Logo',
     price: 1.80,
     category: 'groceries',
     image: '/images/logo.png',
@@ -73,7 +73,7 @@ aconst products = [
   },
   {
     id: 10,
-    name: 'Merry Conditioner',
+    name: 'Glow Body',
     price: 8.50,
     category: 'cosmetics',
     image: '/images/glow body.jpeg',
@@ -82,7 +82,7 @@ aconst products = [
   },
   {
     id: 11,
-    name: 'Giggle Grapes',
+    name: 'Lipstick',
     price: 2.50,
     category: 'groceries',
     image: '/images/lipstick.jpg',
@@ -91,7 +91,7 @@ aconst products = [
   },
   {
     id: 12,
-    name: 'Happy Strawberries',
+    name: 'Logo',
     price: 3.00,
     category: 'groceries',
     image: '/images/logo.png',
@@ -109,7 +109,7 @@ aconst products = [
   },
   {
     id: 14,
-    name: 'Jolly Cheese',
+    name: 'Glow Body',
     price: 4.00,
     category: 'groceries',
     image: '/images/glow body.jpeg',
@@ -118,7 +118,7 @@ aconst products = [
   },
   {
     id: 15,
-    name: 'Playful Eggs',
+    name: 'Lipstick',
     price: 2.20,
     category: 'groceries',
     image: '/images/lipstick.jpg',
@@ -127,7 +127,7 @@ aconst products = [
   },
   {
     id: 16,
-    name: 'Silly Blush',
+    name: 'Logo',
     price: 12.00,
     category: 'cosmetics',
     image: '/images/logo.png',
@@ -145,7 +145,7 @@ aconst products = [
   },
   {
     id: 18,
-    name: 'Merry Nail Polish',
+    name: 'Glow Body',
     price: 6.00,
     category: 'cosmetics',
     image: '/images/glow body.jpeg',
@@ -154,7 +154,7 @@ aconst products = [
   },
   {
     id: 19,
-    name: 'Cheerful Perfume',
+    name: 'Lipstick',
     price: 30.00,
     category: 'cosmetics',
     image: '/images/lipstick.jpg',
@@ -163,7 +163,7 @@ aconst products = [
   },
   {
     id: 20,
-    name: 'Giggly Lip Gloss',
+    name: 'Logo',
     price: 12.00,
     category: 'cosmetics',
     image: '/images/logo.png',
@@ -181,7 +181,7 @@ aconst products = [
   },
   {
     id: 22,
-    name: 'Fun Makeup Kit',
+    name: 'Glow Body',
     price: 35.00,
     category: 'cosmetics',
     image: '/images/glow body.jpeg',
@@ -190,7 +190,7 @@ aconst products = [
   },
   {
     id: 23,
-    name: 'Cheerful Cereal',
+    name: 'Lipstick',
     price: 3.50,
     category: 'groceries',
     image: '/images/lipstick.jpg',
@@ -199,7 +199,7 @@ aconst products = [
   },
   {
     id: 24,
-    name: 'Jolly Juice',
+    name: 'Logo',
     price: 2.80,
     category: 'groceries',
     image: '/images/logo.png',
@@ -208,7 +208,7 @@ aconst products = [
   },
   {
     id: 25,
-    name: 'Playful Pasta',
+    name: 'Scottish Oats',
     price: 1.90,
     category: 'groceries',
     image: '/images/scottish oats.jpeg',
@@ -217,7 +217,7 @@ aconst products = [
   },
   {
     id: 26,
-    name: 'Giggle Toilet Roll',
+    name: 'Glow Body',
     price: 2.50,
     category: 'groceries',
     image: '/images/glow body.jpeg',
@@ -226,7 +226,7 @@ aconst products = [
   },
   {
     id: 27,
-    name: 'Happy Washing Powder',
+    name: 'Lipstick',
     price: 4.00,
     category: 'groceries',
     image: '/images/lipstick.jpg',
