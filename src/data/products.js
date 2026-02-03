@@ -4,7 +4,7 @@ const products = [
     name: 'Glow Body',
     price: 0.80,
     category: 'groceries',
-    image: '/images/glow body.jpeg',
+    image: '/images/lipstick.jpg',
     description: 'A perfectly ripe banana that brings joy to your breakfast. Packed with potassium and natural sweetness.',
     rating: 4.5
   },
